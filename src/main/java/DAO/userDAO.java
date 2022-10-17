@@ -2,7 +2,9 @@ package DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import Model.User;
 import database.JDBCUtil;
@@ -33,7 +35,28 @@ public class userDAO implements DAOinterface<User> {
 			e.printStackTrace();
 		}
 	}
-	public void checkLogin(User t) {
-		
+	@SuppressWarnings("null")
+	public User checkLogin(User t) {
+		Connection conn = JDBCUtil.getConnection();
+		User ketQua = null;
+		try {
+			String sql = "SELECT * FROM user WHERE  username=? AND password= ? ;";
+			PreparedStatement st = conn.prepareStatement(sql);
+			st.setString(1, t.getUserName());
+			st.setString(2, t.getPassWord());
+			System.out.println(sql);
+			ResultSet rs = st.executeQuery();
+			while(rs.next()) {
+				String fname = rs.getString("firstname");
+				String lname = rs.getString("lastname");
+				String username = rs.getString("username");
+				String password = rs.getString("password");
+				ketQua = new User(fname, lname, username, password);
+				System.out.println(ketQua);
+			}
+			JDBCUtil.closeConnection(conn);
+		} catch (Exception e) {
+		}
+			return ketQua;	
 	}
 }

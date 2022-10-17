@@ -3,13 +3,12 @@ package database;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-import com.mysql.cj.jdbc.Driver;
 
 public class JDBCUtil {
 	public static Connection getConnection() {
 		Connection c =null;
 		try {
-			DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+			DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
 			
 			String sql = "jdbc:mySQL://localhost:3306/todolist";
 			String username = "haidan20";
