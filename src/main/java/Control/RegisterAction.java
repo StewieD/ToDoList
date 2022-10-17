@@ -2,6 +2,8 @@ package Control;
 
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -37,6 +39,8 @@ public class RegisterAction extends HttpServlet {
 		
 		User user1 = new User(fname, lname, username, password);
 		userDAO.getInstance().insert(user1);
+		RequestDispatcher rd = request.getRequestDispatcher("LoginToDoList.html");
+		rd.forward(request, response);
 	}
 
 	/**

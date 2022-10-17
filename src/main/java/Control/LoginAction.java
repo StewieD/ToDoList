@@ -38,7 +38,7 @@ public class LoginAction extends HttpServlet {
 			RequestDispatcher rd = request.getRequestDispatcher("success.html");
 			rd.forward(request, response);
 		}else {
-			RequestDispatcher rd = request.getRequestDispatcher("error.html");
+			RequestDispatcher rd = request.getRequestDispatcher("LoginToDoList.html");
 			rd.forward(request, response);
 		}
 	}
