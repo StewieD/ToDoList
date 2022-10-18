@@ -11,10 +11,11 @@ public class testLogin {
 //	userDAO.getInstance().checkLogin(user);
 //	userDAO.getInstance().update(user);
 //	userDAO.getInstance().delete(user);
-//	ArrayList<User> ListUser = userDAO.getInstance().selectAll();
+	ArrayList<User> ListUser = userDAO.getInstance().selectAll();
+	
 //	for (User user : ListUser) {
 //		System.out.println(user.toString());
 //	}
-	System.out.println(userDAO.getInstance().selectByCondition("firstname='Teo'"));	
+//	System.out.println(userDAO.getInstance().selectByCondition("firstname='Teo'"));	
 	}
 }
