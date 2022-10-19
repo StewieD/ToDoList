@@ -31,7 +31,7 @@ public class ListAction extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		User user = new User("zxcasd","qwefff","fffssww", "poorj");
-		request.setAttribute("model", user);
+		request.setAttribute("user", user);
 		RequestDispatcher rd  = request.getRequestDispatcher("/listUser.jsp");
 		rd.forward(request, response);
 	}
