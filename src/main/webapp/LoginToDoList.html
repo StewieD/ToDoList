@@ -2,13 +2,28 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Login TODOLIST</title>
+<title>LOGIN</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/243/243942.png">
 </head>
 <body>
-	<form action="LoginAction" methor="get">
-	<input type="text" name="username"  placeholder="User Name">
-	<input type="password" name="password"  placeholder="Pass Word">
-	<button>SUBMIT</button>
-	</form>
+	<div class="header">
+		<div class="header-btn">
+			<a class="btn-left" href="LoginToDoList.html"> Home </a>
+		</div>
+	</div>
+	<div class="card-login">
+		<form action="LoginAction" methor="get">
+			<p class="title">LOGIN</p>
+			<input type="text" name="username" placeholder="User Name"><br>
+			<br> <input type="password" name="password"
+				placeholder="Pass Word"><br>
+			<br>
+			<div class="card-btn">
+				<a class="btn-left" href="Register.html">Register</a> <input class="btn-right"
+					type="submit" value="Login">
+			</div>
+		</form>
+	</div>
 </body>
 </html>

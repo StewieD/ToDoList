@@ -11,7 +11,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>LIST ACCOUNT</title>
+<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/243/243942.png">
 </head>
 <body>
 	<table>

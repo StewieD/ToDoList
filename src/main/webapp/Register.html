@@ -2,19 +2,30 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Register</title>
+<title>CREATE ACCOUNT</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/243/243942.png">
 </head>
 <body>
-	<h1>REGISTER</h1>
-	<form action="RegisterAction" method = "POST">
-	<input type="text"  name="fname" placeholder="First Name">
-	<input type="text" name="lname" placeholder="Last Name">
-	<input type="text" name="username" placeholder="User Name">
-	<input type="password" name="password" placeholder="Pass Word">
-	<button>SUBMIT</button>
-	</form>
-	<form action="LoginToDoList.html" ethod = "POST" >
-	<input type="submit" value= "Login">
-	</form>
+	<div class="header">
+		<div class="header-btn">
+			<a class="btn-left" href="LoginToDoList.html">Login</a>
+		</div>
+	</div>
+	<div class="card-login">
+		<form action="RegisterAction" method="POST">
+			<h1 class="title">REGISTER</h1>
+			<input type="text" name="fname" placeholder="First Name"><br>
+			<br> <input type="text" name="lname" placeholder="Last Name">
+			<br>
+			<br> <input type="text" name="username" placeholder="User Name">
+			<br>
+			<br> <input type="password" name="password"
+				placeholder="Pass Word"><br>
+			<div class="card-btn">
+				<input class="btn-right" type="submit" value="Done">
+			</div>
+		</form>
+	</div>
 </body>
 </html>

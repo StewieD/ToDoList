@@ -35,7 +35,7 @@ public class LoginAction extends HttpServlet {
 		String username = request.getParameter("username");
 		Model.User user = new Model.User(null, null,username,password);
 		if(userDAO.getInstance().checkLogin(user)!=null) {
-			RequestDispatcher rd = request.getRequestDispatcher("success.html");
+			RequestDispatcher rd = request.getRequestDispatcher("listUser.jsp");
 			rd.forward(request, response);
 		}else {
 			RequestDispatcher rd = request.getRequestDispatcher("LoginToDoList.html");
