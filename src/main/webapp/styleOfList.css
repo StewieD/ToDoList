@@ -1,0 +1,45 @@
+@charset "ISO-8859-1";
+
+body {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-family: "Google Sans", Rsoboto, Arial, sans-serif;
+}
+.card-main{
+	border: 1px solid #dadce0;
+	border-radius:8px;
+	height: 450px;
+	width: 400px;
+	margin: 50px auto 20px auto;
+}
+
+.card {
+	margin: 10px auto;
+	display: flex;
+	justify-content: center;	
+}
+
+table, th, td {
+	border: 1px solid #dadce0;
+	border-collapse: collapse;
+	padding: 5px;
+}
+td{
+	color: #77797c;
+}
+h1{
+	margin: 10px 0px 10px 0px;
+}
+.btn{
+	font-weight: 500;
+	color:white;
+	background:#e5de00;
+	border:none;
+	border-radius: 4px;
+	height: 30px;
+    width: 80px;
+	font-family: "Google Sans",Roboto,Arial,sans-serif;
+	font-size: 15px;
+	cursor: pointer;
+}
