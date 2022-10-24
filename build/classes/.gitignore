@@ -1,5 +1,8 @@
 /Control/
+<<<<<<< HEAD
 /DAO/
 /Model/
 /database/
+=======
+>>>>>>> be8628d (add .gitignore)
 /test/
